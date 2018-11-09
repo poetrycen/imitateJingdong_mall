@@ -1,0 +1,316 @@
+/*
+* @Author: Administrator
+* @Date:   2018-01-22 17:15:38
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-01-26 15:54:45
+*/
+body{
+	background: #f5f5f5;
+}
+.jd_layout{
+	min-width: 300px;
+	max-width: 640px;
+	margin: 0 auto;
+	position: relative;
+}
+/*搜索头部*/
+.jd_layout .jd_header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	z-index: 999;
+}
+/*搜索头部的内容*/
+.jd_layout .jd_header .jd_header_box{
+	min-width: 300px;
+	max-width: 640px;
+	background-color: rgba(201,21,35,0); /*顶部导航条有透明效果*/
+	position: relative;
+	height: 40px;
+	margin: 0 auto;
+}
+
+/*头部logo*/
+.jd_layout .jd_header .jd_header_box .icon_logo{
+	display: block;
+	position: absolute;
+	background-position: 0 -103px;
+	width: 60px;
+	height: 36px;
+	top: 4px;
+	margin-left: 10px;
+}
+
+/*头部搜索表单*/
+.jd_layout .jd_header form{
+	padding-left: 80px;
+	padding-right: 50px;
+}
+.jd_layout .jd_header form .icon_search{
+	position: absolute;
+	background-position: -60px -105px;
+	width: 30px;
+	height: 30px;
+	right: 50px;
+	margin-top: 5px;
+}
+.jd_layout .jd_header form input{
+	width: 100%;
+	height: 30px;
+	border-radius: 15px;
+	margin-top: 5px;
+	text-indent: 12px;
+}
+.jd_layout .jd_header .login{
+	width: 50px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	text-align: center;
+	line-height: 40px;
+	font-size: 15px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/*轮播图*/
+.jd_banner{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+.jd_banner ul:first-child{
+	width: 1000%;
+	transform: translateX(-10%);
+}
+.jd_banner ul:first-child li{
+	width: 10%;
+	float: left;
+}
+.jd_banner ul:first-child li img{
+	width: 100%;
+	display: block;
+}
+/*导航图 点*/
+.jd_banner ul:last-child{
+	width: 118px;
+	height: 6px;
+	position: absolute;
+	left: 50%;
+	margin-left: -59px;
+	bottom: 10px;
+}
+.jd_banner ul:last-child li{
+	width: 6px;
+	height: 6px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	margin-left: 10px;
+	float: left;
+}
+.jd_banner ul:last-child li:first-child{
+	margin-left: 0;
+}
+.jd_banner ul:last-child li.now{
+    background: #fff;
+}
+
+/*导航栏*/
+.jd_nav{
+	padding: 0 3.125%;
+	height: 150px;
+	width: 100%;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: #fff;
+}
+.jd_nav ul{
+	width: 100%;
+	padding-top: 10px;
+}
+.jd_nav ul li{
+	float: left;
+	width: 25%;
+	height: 69px;
+}
+.jd_nav ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.jd_nav ul li a img{
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+}
+.jd_nav ul li a p{
+	font-size: 12px;
+	color: #666;
+	margin-top: 6px;
+}
+
+/*商品区块*/
+.jd_product{
+	margin: 0 5px;
+}
+.jd_product .jd_product_box{
+	box-shadow: 0 0 1px 1px #e0e0e0;
+	margin-top: 8px;
+}
+/*掌上秒杀*/
+.jd_product .jd_secondkill{
+
+}
+.jd_product .jd_secondkill .jd_secondkill_left{
+	float: left;
+	position: relative;
+}
+.jd_product .jd_secondkill .jd_secondkill_left .sk_icon{
+	background: url("../images/seckill-icon.png") no-repeat;
+	-webkit-background-size: 16px 20px;
+	background-size: 16px 20px;
+	width: 16px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	top: 5px;
+}
+.jd_product .jd_secondkill .jd_secondkill_left .sk_name{
+	text-indent: 20px;
+	color: red;
+	display: inline-block;
+	font-weight: inherit;
+	float: left;
+}
+.jd_product .jd_secondkill .jd_secondkill_left .sk_time{
+	display: block;
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+.jd_product .jd_secondkill .jd_secondkill_left .sk_time span{
+	display: block;
+	float: left;
+	width: 14px;
+	height: 20px;
+	margin-left: 2px;
+	line-height: 20px;
+	background: #333;
+	color: #fff;
+	text-align: center;
+}
+.jd_product .jd_secondkill .jd_secondkill_right{
+	float: right;
+	margin-right: 10px;
+}
+/*没有边框*/
+.jd_product .jd_product_box .product_top{
+	height: 32px;
+	line-height: 32px;
+	border-bottom: 1px solid #e0e0e0;
+}
+/*没有边框*/
+.jd_product .jd_product_box .product_top.no_bor{
+	border-bottom: none;
+}
+.jd_product .jd_product_box .product_top h3{
+	position: relative;
+	font-family: inherit;
+	font-size: 14px;
+	text-indent: 20px;
+	color: #888;
+}
+.jd_product .jd_product_box .product_top h3::before{
+	content: '';
+	display: block;
+	width: 3px;
+	height: 12px;
+	background: #d8505c;
+	position: absolute;
+	top: 10px;
+	left: 5px;
+}
+
+/*秒杀*/
+.jd_secondkill{
+	background: #fff;
+}
+
+.jd_secondkill .product_bot{
+	width: 100%;
+}
+.jd_secondkill .product_bot ul{
+	width: 100%;
+	overflow: hidden;
+}
+.jd_secondkill .product_bot ul li{
+	width: 33.3%;
+	float: left;
+}
+.jd_secondkill .product_bot ul li a{
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+}
+.jd_secondkill .product_bot ul li a .img_box{
+	margin: 10px 0;
+	width: 100%;
+	border-right: 1px solid #e0e0e0;
+}
+.jd_secondkill .product_bot ul li a .img_box.no_bar{
+	border-right: none;
+}
+.jd_secondkill .product_bot ul li a img{
+	width: 70%;
+	text-align: center;
+
+}
+.jd_secondkill .product_bot ul li a .now_price{
+	color: red;
+}
+.jd_secondkill .product_bot ul li a .old_price{
+	text-decoration: line-through;
+	margin-top: 3px;
+	color: #888;
+}
+
+/*超值购*/
+.jd_product .jd_pd .product_bot{
+	width: 100%;
+}
+/*左边框*/
+.jd_product .jd_pd{
+	overflow: hidden;
+}
+.jd_product .jd_pd .product_bot .p_left{
+	width: 50%;
+	float: left;
+}
+/*右边框*/
+.jd_product .jd_pd .product_bot .p_right{
+	width: 50%;
+	float: right;
+}
+/*左边的大图片a*/
+.jd_product .jd_pd .product_bot .b_left{
+	border-left: 1px solid #e0e0e0;
+}
+
+/*右边框*/
+.jd_product .jd_pd .product_bot .b_right{
+	border-right: 1px solid #e0e0e0;
+}
+/*下边框*/
+.jd_product .jd_pd .product_bot .b_bottom{
+	border-bottom: 1px solid #e0e0e0;
+}
+.jd_product .jd_pd .product_bot img{
+	width: 100%;
+	display: block;
+}
